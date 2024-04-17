@@ -9,7 +9,7 @@ class TestTaxPayer(unittest.TestCase):
         # creates tax payer object with dummy username and password
         test_obj = c.TaxPayer('username_test', 'password_test')
         # user input to the profile picture
-        input = './../../../../../etc/passwd'
+        input = 'Season-1/Level-3/assets/prof_picture.png'
         # the output of the function upon processing user input
         output = test_obj.get_prof_picture(input)
 
@@ -22,7 +22,7 @@ class TestTaxPayer(unittest.TestCase):
         # gets base directory
         base_dir = os.path.dirname(os.path.abspath(__file__))
         # user input to the tax form attachment
-        file_path = './../../../../../etc/passwd'
+        file_path = 'Season-1/Level-3/assets/tax_form.pdf'
         # complete path for input
         input = base_dir + file_path
         # the output of the function upon processing user input
